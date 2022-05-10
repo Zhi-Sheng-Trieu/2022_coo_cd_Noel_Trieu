@@ -1,0 +1,8 @@
+Compréhension du diagramme de séquence
+Diagramme de séquence décrivant le comportement de chargement des fichiers d'un magasin
+
+L'utilisateur (le main) lance la méthode chargerMagasin() sur un objet chargeur (ChargeurMagasin) cette méthode
+lance la méthode chargerCD() qui va charger un CD. On va charger les pistes dans le CD chargé.
+
+
+Au final l'utilisateur a un magasin avec un CD qui contient deux pistes.
