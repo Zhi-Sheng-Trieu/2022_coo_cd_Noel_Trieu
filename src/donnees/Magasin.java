@@ -56,7 +56,7 @@ public class Magasin {
 	}
 	
 	/**
-	 * permet d'acceder à un CD
+	 * permet d'acceder Ã  un CD
 	 * 
 	 * @return le cd a l'indice i ou null si indice est non valide
 	 */
@@ -66,6 +66,14 @@ public class Magasin {
 		if ((i>=0)&&(i<this.listeCds.size()))
 			res=this.listeCds.get(i);
 		return(res);
+	}
+
+	public void trierAriste() {
+		throw new Error("TODO");
+	}
+
+	public void trierAlbum() {
+		throw new Error("TODO");
 	}
 
 	// TODO  ajouter une methode de tri
