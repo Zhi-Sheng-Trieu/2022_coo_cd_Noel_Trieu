@@ -33,6 +33,9 @@ public class MainChargeurMagasin {
 		resultat.trierAriste();
 		System.out.println(resultat);
 
+
+		System.out.println("albums");
+
 		resultat.trierAlbum();
 		System.out.println(resultat);
 
