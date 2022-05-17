@@ -69,7 +69,7 @@ public class Magasin {
     public void trierAriste() {
         ArrayList<CD> listeTrie = new ArrayList<CD>();
         CD cdTrie;
-        while (listeCds.size()>0) {
+        while (listeCds.size() > 0) {
             cdTrie = listeCds.get(0);
             for (int j = 1; j < listeCds.size(); j++) {
                 if (cdTrie.compareArtiste(listeCds.get(j)) > 0) {
@@ -85,7 +85,7 @@ public class Magasin {
     public void trierAlbum() {
         ArrayList<CD> listeTrie = new ArrayList<CD>();
         CD cdTrie;
-        while (listeCds.size()>0) {
+        while (listeCds.size() > 0) {
             cdTrie = listeCds.get(0);
             for (int j = 1; j < listeCds.size(); j++) {
                 if (cdTrie.compareNom(listeCds.get(j)) > 0) {
@@ -97,5 +97,22 @@ public class Magasin {
         }
         listeCds = listeTrie;
     }
+
+    public void trier(ComparateurCd comparateur) {
+        ArrayList<CD> listeTrie = new ArrayList<CD>();
+        CD cdTrie;
+        while (listeCds.size() > 0) {
+            cdTrie = listeCds.get(0);
+            for (int j = 1; j < listeCds.size(); j++) {
+                if (comparateur.etreAvant(listeCds.get(j), cdTrie)) {
+                    cdTrie = listeCds.get(j);
+                }
+            }
+            listeTrie.add(cdTrie);
+            listeCds.remove(cdTrie);
+        }
+        listeCds = listeTrie;
+    }
+
 
 }
