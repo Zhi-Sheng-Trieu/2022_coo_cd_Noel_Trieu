@@ -18,14 +18,7 @@ public class ChargeurMagasinTest {
 
     @Test
     public void test2_chargerMagasin_exception() {
-        boolean exception = false;
-        try {
-            ChargeurMagasin chargeurMagasin = new ChargeurMagasin("rep_faux");
-            Magasin magasin = chargeurMagasin.chargerMagasin();
-        } catch (FileNotFoundException e){
-            exception = true;
-        }
-        assertEquals(true, exception);
+        assertThrows(FileNotFoundException.class, () -> {new ChargeurMagasin("rep_faux").chargerMagasin();});
     }
-    
+
 }

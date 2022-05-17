@@ -68,14 +68,24 @@ public class Magasin {
 		return(res);
 	}
 
-	public void trierAriste() {
-		throw new Error("TODO");
-	}
 
-	public void trierAlbum() {
-		throw new Error("TODO");
-	}
 
-	// TODO  ajouter une methode de tri
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
