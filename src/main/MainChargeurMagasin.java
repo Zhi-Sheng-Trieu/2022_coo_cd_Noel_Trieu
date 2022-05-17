@@ -35,6 +35,8 @@ public class MainChargeurMagasin {
 
 	 */
 
+		System.out.println("albums");
+
 		resultat.trierAlbum();
 		System.out.println(resultat);
 
