@@ -114,5 +114,15 @@ public class Magasin {
         listeCds = listeTrie;
     }
 
+    public ArrayList<CD> selectionParArtiste(String artiste) {
+        ArrayList<CD> list = new ArrayList<CD>();
+        Selecteur selecteur = new SelecteurArtiste(artiste);
+        for (CD cd : listeCds) {
+            if (selecteur.garderCd(cd)) {
+                list.add(cd);
+            }
+        }
+        return list;
+    }
 
 }
